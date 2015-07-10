@@ -2,3 +2,4 @@
 .jshintrc
 demo*/*
 **/node_modules/*
+nodejs-https/*
