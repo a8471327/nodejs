@@ -1,0 +1,60 @@
+[Thu Jul 09 2015 15:36:45 GMT+0800 (中国标准时间)]/
+Error: An error for test purposes.
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\routes\index.js:9:8
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:46:12)
+[Thu Jul 09 2015 15:40:49 GMT+0800 (中国标准时间)]/
+Error: An error for test purposes.
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\routes\index.js:9:8
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:46:12)
+[Thu Jul 09 2015 15:45:10 GMT+0800 (中国标准时间)]/
+Error: An error for test purposes.
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\routes\index.js:9:8
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:46:12)
+[Thu Jul 09 2015 15:45:13 GMT+0800 (中国标准时间)]/
+Error: An error for test purposes.
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\routes\index.js:9:8
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:46:12)
+[Thu Jul 09 2015 15:45:14 GMT+0800 (中国标准时间)]/
+Error: An error for test purposes.
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\routes\index.js:9:8
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:271:10)
+    at Function.handle (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:176:3)
+    at router (D:\Program Files\Apache Software Foundation\Apache2.2\htdocs\node\microblog\node_modules\express\lib\router\index.js:46:12)

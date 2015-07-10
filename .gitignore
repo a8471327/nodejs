@@ -1,0 +1,4 @@
+﻿#过滤文件
+.jshintrc
+demo*/*
+**/node_modules/*
