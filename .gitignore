@@ -2,4 +2,9 @@
 .jshintrc
 demo*/*
 **/node_modules/*
+**/bower_components/*
+**/dist/*
+**/.tmp/*
 nodejs-https/*
+nodejs-Mongoose/*
+nodejs-log4js/*
