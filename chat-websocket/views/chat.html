@@ -2,18 +2,109 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Socket.io - Simple chat</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-  <script src="javascripts/jquery.min.js"></script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="javascripts/chat.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" my-scalable="0">
+  <title>Websocket简单聊天室</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+  <style type="text/css">
+  body{background-color: #F0EFF4;}
+  #wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #wrapper .row{
+    padding: 10px 0;
+  }
+  .sys-msg{
+    text-align: center;
+  }
+  .user-name{
+    text-align: right;
+  }
+  .my-name{
+    text-align: left;
+  }
+  .user-msg, .my-msg{
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    border-radius: 10px;
+  }
+  .user-msg{
+    float: left;
+    background-color: #fff;
+  }
+  .my-msg{
+    float: right;
+    background-color: #CEE9F6;
+  }
+  .caret{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+  .user-msg .caret{
+    left: -14px;
+    border-right: 10px solid #fff;
+  }
+  .my-msg .caret{
+    right: -12px;
+    border-left: 10px solid #CEE9F6;
+  }
+  #submit{
+    width: 100%;
+  }
+  .navbar-fixed-bottom{
+    padding-top: 8px;
+  }
+  </style>
 </head>
 <body>
-  <h1>Socket.io - Simple chat room</h1>
-  <div>
-    <span id="status">Connecting...</span>
-    <input type="text" id="input"/>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Websocket简单聊天室</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid" id="wrapper">
   </div>
-  <div id="content"></div>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-8">
+          <input type="text" class="form-control" placeholder="输入昵称" id="input">
+        </div>
+        <div class="col-xs-4">
+          <button type="submit" class="btn btn-default" id="submit">确定</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="javascripts/my.js"></script>
+<script src="javascripts/chat.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+  var submit = document.getElementById('submit');
+  var input = document.getElementById('input');
+  var myChat = new chat();
+
+  submit.onclick = function(){  //监听消息发送
+    var msg = input.value;
+    if(msg){
+      input.value = "";
+      myChat.submitMsg(msg, function(){
+        input.placeholder = '输入内容';
+      });
+    }
+  }
+}
+</script>
 </body>
 </html>
