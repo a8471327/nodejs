@@ -1,0 +1,10 @@
+{
+    "name": "nodejs-crawler",
+    "version": "0.0.1",
+    "dependencies" : {
+        "request": "2.60.0",
+        "cheerio": "0.19.0",
+        "gbk": "0.1.0",
+        "iconv-lite": "0.4.11"
+    }
+}
