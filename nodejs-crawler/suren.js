@@ -1,11 +1,11 @@
 var request = require('request');
 var cheerio = require('cheerio');
+var iconv = require('iconv-lite');
 var fs = require('fs');
-var gbk = require('gbk');
 var url = 'http://www.shiting5.com/tv/cn/hunan/';
 request({url: url, encoding:null }, function (error, res, body) {
     if (!error && res.statusCode == 200) {
-        body = gbk.toString('utf-8', body);
+        body = iconv.decode(body, 'gb2312');
         var $ = cheerio.load(body);
         var a = $('li > a.vd');
         a.each(function (idx, ele) {
@@ -27,7 +27,7 @@ function readChannel(opt){
     }
     request(option, function (error, res, body) {
         if (!error && res.statusCode == 200) {
-            body = gbk.toString('utf-8', body);
+            body = iconv.decode(body, 'gb2312');
             var $ = cheerio.load(body);
             var script = $('.player > script').text();
             var arr = Number(script.split(',')[1]);
@@ -51,9 +51,9 @@ function getTVID(opt){
     }
     request(option, function (error, res, body) {
         if (!error && res.statusCode == 200) {
-            body = gbk.toString('utf-8', body);
+            body = iconv.decode(body, 'gb2312');
             var $ = cheerio.load(body);
-            var tvUrl = $('#display2 > iframe').attr('src');
+            var tvUrl = $('iframe').attr('src');
             var obj = {title: opt.title, id: tvUrl.split('http://pczhibo.imgo.tv/')[1]}
             console.log(obj);
         }
