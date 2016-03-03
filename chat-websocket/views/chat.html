@@ -84,8 +84,6 @@
       </div>
     </div>
   </nav>
-<script src="javascripts/jquery.min.js"></script>
-<script src="javascripts/bootstrap.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="javascripts/my.js"></script>
 <script src="javascripts/chat.js"></script>
@@ -95,12 +93,19 @@ window.onload = function(){
   var input = document.getElementById('input');
   var myChat = new chat();
 
-  submit.onclick = function(){  //监听消息发送
+  onEvent('click', submit, sendMsg);
+  onEvent('keyup', input, function(ev){
+    var e = ev || event;
+    e.ctrlKey && sendMsg();
+  });
+
+  function sendMsg(){   //监听消息发送
     var msg = input.value;
     if(msg){
       input.value = "";
       myChat.submitMsg(msg, function(){
         input.placeholder = '输入内容';
+        submit.innerText = '发送';
       });
     }
   }

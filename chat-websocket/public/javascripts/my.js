@@ -66,3 +66,20 @@ function stopBubble(e){
     }
     return false;
 }
+
+/*事件绑定*/
+function onEvent(type, elem, eventHandle){
+	if(elem.addEventListener){
+		elem.addEventListener(type, eventHandle, false);
+	}else if(elem.attachEvent) {
+		elem.attachEvent("on" + type, eventHandle);
+	}
+}
+
+function offEvent(type, elem, eventHandle){
+	if(elem.removeEventListener){
+		elem.removeEventListener(type, eventHandle, false);
+	}else if(elem.detachEvent) {
+		elem.detachEvent("on" + type, eventHandle);
+	}
+}

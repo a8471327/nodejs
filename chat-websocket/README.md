@@ -5,3 +5,5 @@
 ###将socket.io的操作抽象出chat_server.js中
 
 ###在./bin/www把listen交给socket.io接管
+
+###npm ./bin/www 运行项目
