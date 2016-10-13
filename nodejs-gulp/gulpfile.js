@@ -15,10 +15,12 @@ var gulp = require('gulp'),
 	rev = require('gulp-rev'),						//生成版本号
 	revCollector = require('gulp-rev-collector'),	//引入版本号
 	htmlmin = require('gulp-htmlmin'),				//压缩HTML
-	// livereload = require('gulp-livereload'),		//浏览器自动刷新
+	browserSync = require('browser-sync').create();
+	reload      = browserSync.reload;				//浏览器自动刷新
 	del = require('del');							//也是个删除···
 
 var sourcePath = {									//源文件路径
+		all: 'src/**/*',
 		html: 'src/**/*.html',
 		css: 'src/css/**/*.css',
 		js: 'src/js/**/*.js',
@@ -60,6 +62,7 @@ gulp.task('css', function(){
 		.pipe(rev())
 		.pipe(rev.manifest())
 		.pipe(gulp.dest(revPath.css))
+		.pipe(reload({stream: true}))
 		.pipe(notify({message: 'Styles task complete'}));
 });
 
@@ -110,14 +113,26 @@ gulp.task('default', ['clean'], function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch(sourcePath.css, ['css']);
-	gulp.watch(sourcePath.js, ['js']);
-	gulp.watch(sourcePath.img, ['img']);
-	gulp.watch(sourcePath.html, ['html']);
+	gulp.watch(sourcePath.all).on('change', function(){
+		runSequence('img', 'js', 'css', 'html');
+	});
+	// gulp.watch(sourcePath.js, ['js']);
+	// gulp.watch(sourcePath.img, ['img']);
+	// gulp.watch(sourcePath.html, ['html']);
 
-	// Create LiveReload server
-  	// livereload.listen();
-  	// Watch any files in dist/, reload on change
-  	// gulp.watch(['dist/**']).on('change', livereload.changed);
+  	// browserSync.init(['src/*.html'], {
+   //      server: "src/"
+   //  });
+
+    browserSync.init({
+        server: {
+            baseDir: "src/"
+        }
+    });
+
+    gulp.watch("**/*.html").on("change", browserSync.reload);
+
+    // gulp.watch(['dist/**']).on('change', reload);
+    // gulp.watch("*.html").on("change", reload);
 });
 
